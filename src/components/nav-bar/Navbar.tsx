@@ -45,7 +45,7 @@ function Navbar({ menus, onStateChange }: INavbarProps) {
   });
 
   return (
-    <div
+    <nav
       className="sticky top-0 z-[2000]"
       style={{
         backdropFilter: visible && !isOpen ? "blur(1000px)" : "",
@@ -136,7 +136,7 @@ function Navbar({ menus, onStateChange }: INavbarProps) {
           </div>
         }
       </div>
-    </div>
+    </nav>
   );
 }
 
