@@ -14,7 +14,7 @@ function Item(props: IProps) {
         <a
           href={props.href}
           className={classNames(
-            "px-3 py-2 flex items-center text-xs uppercase leading-snug  hover:opacity-75",
+            "px-3 py-2 flex items-center text-xs uppercase leading-snug  hover:opacity-75 text-center",
             props.active ? "text-primary" : "text-white"
           )}
         >
