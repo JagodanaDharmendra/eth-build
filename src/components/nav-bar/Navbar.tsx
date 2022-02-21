@@ -26,7 +26,7 @@ function Navbar({ menus, onStateChange }: INavbarProps) {
 
   useEffect(() => {
     onStateChange(isOpen);
-  }, [isOpen]);
+  }, [isOpen, onStateChange]);
 
   const toggleVisible = () => {
     const scrolled = document.documentElement.scrollTop;
