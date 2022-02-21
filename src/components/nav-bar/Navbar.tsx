@@ -46,12 +46,12 @@ function Navbar({ menus, onStateChange }: INavbarProps) {
 
   return (
     <div
-      className="sticky top-0 z-[2000] rounded-b-2xl"
+      className="sticky top-0 z-[2000]"
       style={{
         backdropFilter: visible && !isOpen ? "blur(1000px)" : "",
       }}
     >
-      <div className="relative px-4 py-4 bg-black/60 rounded-b-2xl">
+      <div className="relative px-4 py-4 bg-black/60">
         {
           //Desktop
           <Container>

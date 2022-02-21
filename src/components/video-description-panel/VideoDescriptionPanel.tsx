@@ -15,10 +15,10 @@ function VideoDescriptionPanel({
       style={{
         backgroundColor: bgColor,
       }}
-      className={classNames("py-4 px-2")}
+      className="py-10 md:py-16 px-2"
     >
       <Container>
-        <div className="grid grid-cols-1 md:grid-cols-2">
+        <div className="grid grid-cols-1 md:grid-cols-2 items-center">
           <div
             className={classNames(
               reverse && "md:order-last",

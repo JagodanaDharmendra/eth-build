@@ -109,7 +109,7 @@ const contentData: Array<IPropsVideoDescriptionPanel & { classId: string }> = [
         />,
       ],
     },
-    bgColor: "#ffffff",
+    bgColor: "",
     whiteText: false,
   },
   {
@@ -135,7 +135,7 @@ const contentData: Array<IPropsVideoDescriptionPanel & { classId: string }> = [
         />,
       ],
     },
-    bgColor: "#ffffff",
+    bgColor: "",
     whiteText: false,
   },
   {
@@ -160,7 +160,7 @@ const contentData: Array<IPropsVideoDescriptionPanel & { classId: string }> = [
         />,
       ],
     },
-    bgColor: "#ffffff",
+    bgColor: "",
     whiteText: false,
   },
   {
@@ -186,7 +186,7 @@ const contentData: Array<IPropsVideoDescriptionPanel & { classId: string }> = [
         />,
       ],
     },
-    bgColor: "#ffffff",
+    bgColor: "",
     whiteText: false,
   },
   {
@@ -213,7 +213,7 @@ const contentData: Array<IPropsVideoDescriptionPanel & { classId: string }> = [
         />,
       ],
     },
-    bgColor: "#ffffff",
+    bgColor: "",
     whiteText: false,
   },
   {
@@ -239,7 +239,7 @@ const contentData: Array<IPropsVideoDescriptionPanel & { classId: string }> = [
         />,
       ],
     },
-    bgColor: "#ffffff",
+    bgColor: "",
     whiteText: false,
   },
   {
@@ -265,7 +265,7 @@ const contentData: Array<IPropsVideoDescriptionPanel & { classId: string }> = [
         />,
       ],
     },
-    bgColor: "#ffffff",
+    bgColor: "",
     whiteText: false,
   },
   {
@@ -292,7 +292,7 @@ const contentData: Array<IPropsVideoDescriptionPanel & { classId: string }> = [
         />,
       ],
     },
-    bgColor: "#ffffff",
+    bgColor: "",
     whiteText: false,
   },
   {
@@ -319,7 +319,7 @@ const contentData: Array<IPropsVideoDescriptionPanel & { classId: string }> = [
         />,
       ],
     },
-    bgColor: "#ffffff",
+    bgColor: "",
     whiteText: false,
   },
 ];
@@ -327,7 +327,12 @@ const contentData: Array<IPropsVideoDescriptionPanel & { classId: string }> = [
 function Home() {
   const [isMenuOpened, setIsMenuOpened] = useState(false);
   return (
-    <div className={classNames("bg-black", isMenuOpened && "fixed")}>
+    <div
+      className={classNames(
+        "bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500",
+        isMenuOpened && "fixed"
+      )}
+    >
       <Navbar
         menus={navMenus}
         onStateChange={(_isOpened) => {
@@ -343,7 +348,7 @@ function Home() {
         );
       })}
 
-      <div className="flex flex-col md:flex-row justify-center items-center gap-2 h-96 bg-white">
+      <div className="flex flex-col md:flex-row justify-center items-center gap-2 h-96">
         <ButtonItem
           href="https://www.youtube.com/playlist?list=PLJz1HruEnenCXH7KW7wBCEBnBLOVkiqIi"
           title="Learn More"
