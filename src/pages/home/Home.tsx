@@ -334,7 +334,33 @@ function Home() {
           </div>
         );
       })}
+
+      <div className="flex justify-center items-center gap-2 h-96 space-x-4 bg-white">
+        <ButtonItem
+          href="https://www.youtube.com/playlist?list=PLJz1HruEnenCXH7KW7wBCEBnBLOVkiqIi"
+          title="Learn More"
+          titleIcon="📚"
+          Button={PrimaryButton}
+        />
+        <ButtonItem
+          href="https://sandbox.eth.build"
+          title="Start Building!"
+          titleIcon="🛠"
+          Button={TertiaryButton}
+        />
+      </div>
     </div>
+  );
+}
+
+function ButtonItem({ href, title, titleIcon, Button }: any) {
+  return (
+    <a href={href} className="flex" target="_blank" rel="noopener noreferrer">
+      <Button onClick={() => {}} styleClassNames="w-52">
+        {titleIcon && <span>{titleIcon}</span>}
+        <span>{title}</span>
+      </Button>
+    </a>
   );
 }
 
