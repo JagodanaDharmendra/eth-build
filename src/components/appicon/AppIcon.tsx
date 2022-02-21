@@ -1,8 +1,8 @@
 function AppIcon() {
   return (
-    <div className="text-white font-semibold text-xl space-x-3">
-      <span className="w-44">🛠️</span>
-      <span>ETH.Build</span>
+    <div className="flex-row text-white font-semibold text-base md:text-xl space-x-3 px-2">
+      <span>🛠️</span>
+      <span className="invisible xl:visible">ETH.Build</span>
     </div>
   );
 }
