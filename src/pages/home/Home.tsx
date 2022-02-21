@@ -9,6 +9,7 @@ import {
   DescriptionPanelComponent,
   SecondaryButton,
   PrimaryButton,
+  Footer,
 } from "../../components";
 
 const navMenus: INavbarProps["menus"] = [
@@ -362,6 +363,8 @@ function Home() {
           Button={TertiaryButton}
         />
       </div>
+
+      <Footer />
     </div>
   );
 }
