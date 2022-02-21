@@ -1,5 +1,4 @@
 export * from "./appicon";
 export * from "./container";
 export * from "./button";
-export * from "./video";
-export * from "./description-panel";
+export * from "./video-description-panel";
