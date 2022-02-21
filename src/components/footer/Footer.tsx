@@ -6,23 +6,23 @@ function Footer() {
       <div className="flex flex-col md:flex-row gap-3">
         <Icon
           href="https://github.com/austintgriffith/eth.build"
-          _Icon={FaGithub}
+          IconView={FaGithub}
         />
-        <Icon href="https://twitter.com/austingriffith" _Icon={FaTwitter} />
+        <Icon href="https://twitter.com/austingriffith" IconView={FaTwitter} />
       </div>
       <p className="text-white">©2022 ETH.Build. All Rights Reserved.</p>
     </div>
   );
 }
 
-function Icon({ href, _Icon }: any) {
+function Icon({ href, IconView }: any) {
   return (
     <a
       href="https://twitter.com/austingriffith"
       target="_blank"
       rel="noopener noreferrer"
     >
-      <_Icon className="w-6 sm:w-8 h-6 sm:h-8" />
+      <IconView className="w-6 sm:w-8 h-6 sm:h-8" />
     </a>
   );
 }
