@@ -335,7 +335,7 @@ function Home() {
         );
       })}
 
-      <div className="flex justify-center items-center gap-2 h-96 space-x-4 bg-white">
+      <div className="flex flex-col md:flex-row justify-center items-center gap-2 h-96 bg-white">
         <ButtonItem
           href="https://www.youtube.com/playlist?list=PLJz1HruEnenCXH7KW7wBCEBnBLOVkiqIi"
           title="Learn More"
