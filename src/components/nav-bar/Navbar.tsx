@@ -44,7 +44,7 @@ function Navbar({ menus }: INavbarProps) {
     <div
       className="sticky top-0 z-[2000] rounded-b-2xl"
       style={{
-        backdropFilter: visible && !isOpen ? "blur(35px)" : "",
+        backdropFilter: visible && !isOpen ? "blur(1000px)" : "",
       }}
     >
       <div className=" relative px-4 py-4">
@@ -98,7 +98,7 @@ function Navbar({ menus }: INavbarProps) {
               <div
                 className="absolute top-0 left-0 bottom-0 right-0 h-screen w-screen flex flex-col p-4"
                 style={{
-                  backdropFilter: "blur(95px)",
+                  backdropFilter: "blur(1000px)",
                 }}
               >
                 {
