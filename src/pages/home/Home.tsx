@@ -329,7 +329,7 @@ function Home() {
   return (
     <div
       className={classNames(
-        "bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500",
+        "bg-gradient-to-br from-indigo-400 via-purple-400 to-pink-400",
         isMenuOpened && "fixed"
       )}
     >
