@@ -1,6 +1,7 @@
+import React from "react";
+
 export default interface IDescriptionPanelProps {
   title: string;
   points: Array<string>;
-  href: string;
-  buttonTitle?: string;
+  buttons: Array<React.ReactNode>;
 }

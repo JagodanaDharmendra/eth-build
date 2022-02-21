@@ -1,12 +1,6 @@
 import { IDescriptionPanelProps } from "..";
-import { TertiaryButton } from "../../..";
 
-function DescriptionPanel({
-  title,
-  points,
-  href,
-  buttonTitle = "Build",
-}: IDescriptionPanelProps) {
+function DescriptionPanel({ title, points, buttons }: IDescriptionPanelProps) {
   return (
     <div className="flex flex-col w-full justify-start items-start p-4 justify-items-center">
       <div className="mb-4 text-4xl font-semibold">{title}</div>
@@ -19,12 +13,9 @@ function DescriptionPanel({
           );
         })}
       </ul>
-      <a href={href} className="flex w-full mt-6">
-        <TertiaryButton onClick={() => {}} styleClassNames="flex-1">
-          <span>🔧</span>
-          <span>{buttonTitle}</span>
-        </TertiaryButton>
-      </a>
+      <div className="flex w-full flex-col md:flex-row justify-between gap-1 md:gap-2 mt-6">
+        {buttons}
+      </div>
     </div>
   );
 }
