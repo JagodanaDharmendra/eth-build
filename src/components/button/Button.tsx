@@ -9,7 +9,7 @@ function Button({
   styleClassNames = "",
 }: IButtonProps) {
   const styles = classNames(
-    "h-14 max-h-14 rounded-md items-center justify-center content-center text-white px-4 py-1 gap-3 space-x-3 text-xl",
+    "h-10 md:h-14 max-h-14 rounded-md items-center justify-center content-center text-white px-4 py-1 gap-3 space-x-3 text-xl",
     styleClassNames,
     type === IButtonType.PRIMARY && "bg-primary",
     type === IButtonType.SECONDARY && "bg-transparent border border-primary",

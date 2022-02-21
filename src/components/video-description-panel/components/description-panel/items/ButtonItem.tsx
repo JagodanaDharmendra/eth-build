@@ -8,7 +8,10 @@ function ButtonItem({ href, title, titleIcon, Button }: IButtonItemProps) {
       target="_blank"
       rel="noopener noreferrer"
     >
-      <Button onClick={() => {}} styleClassNames="flex-1 max-w-sm">
+      <Button
+        onClick={() => {}}
+        styleClassNames="flex-1 max-w-sm text-sm md:text-base uppercase"
+      >
         {titleIcon && <span>{titleIcon}</span>}
         <span>{title}</span>
       </Button>
