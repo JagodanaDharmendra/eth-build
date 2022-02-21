@@ -15,6 +15,7 @@ function VideoDescriptionPanel({
       style={{
         backgroundColor: bgColor,
       }}
+      className={classNames("py-4 px-2")}
     >
       <Container>
         <div className="grid grid-cols-1 md:grid-cols-2">
