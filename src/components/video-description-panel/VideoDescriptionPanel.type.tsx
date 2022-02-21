@@ -5,4 +5,5 @@ export default interface IPropsVideoDescriptionPanel {
   DescriptionPanelData: IDescriptionPanelProps;
   reverse?: boolean;
   bgColor: string;
+  whiteText: boolean;
 }
