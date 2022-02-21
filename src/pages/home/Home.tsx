@@ -1,5 +1,4 @@
 import {
-  Container,
   IPropsVideoDescriptionPanel,
   Navbar,
   INavbarProps,
