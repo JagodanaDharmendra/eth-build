@@ -5,7 +5,7 @@ import { Video, DescriptionPanel } from "./components";
 
 function VideoDescriptionPanel({
   videoData,
-  DescriptionPanelData,
+  descriptionPanelData: DescriptionPanelData,
   reverse = false,
   bgColor,
   whiteText = false,
