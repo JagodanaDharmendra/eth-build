@@ -3,7 +3,7 @@ import { useLocation } from "react-router-dom";
 import { AppIcon, Container } from "..";
 import { Item } from "./item";
 import { MdMenu, MdClose } from "react-icons/md";
-import INavbarProps from "./Navbar.type";
+import { INavbarProps } from ".";
 
 function Navbar({ menus }: INavbarProps) {
   const location = useLocation();
