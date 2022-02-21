@@ -1,3 +1,5 @@
+import classNames from "classnames";
+import { useState } from "react";
 import {
   IPropsVideoDescriptionPanel,
   Navbar,
@@ -323,9 +325,15 @@ const contentData: Array<IPropsVideoDescriptionPanel & { classId: string }> = [
 ];
 
 function Home() {
+  const [isMenuOpened, setIsMenuOpened] = useState(false);
   return (
-    <div className="bg-black">
-      <Navbar menus={navMenus} />
+    <div className={classNames("bg-black", isMenuOpened && "fixed")}>
+      <Navbar
+        menus={navMenus}
+        onStateChange={(_isOpened) => {
+          setIsMenuOpened(_isOpened);
+        }}
+      />
 
       {contentData.map((itemData, index) => {
         return (

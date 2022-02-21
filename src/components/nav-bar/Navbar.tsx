@@ -5,7 +5,7 @@ import { Item } from "./item";
 import { MdMenu, MdClose } from "react-icons/md";
 import { INavbarProps } from ".";
 
-function Navbar({ menus }: INavbarProps) {
+function Navbar({ menus, onStateChange }: INavbarProps) {
   const location = useLocation();
   const hash = location ? location.hash : "";
   const [activeMenu, setActiveMenu] = useState<string>(hash);
@@ -23,6 +23,10 @@ function Navbar({ menus }: INavbarProps) {
     }
     setActiveMenu(hash);
   }, [hash]);
+
+  useEffect(() => {
+    onStateChange(isOpen);
+  }, [isOpen]);
 
   const toggleVisible = () => {
     const scrolled = document.documentElement.scrollTop;
@@ -47,7 +51,7 @@ function Navbar({ menus }: INavbarProps) {
         backdropFilter: visible && !isOpen ? "blur(1000px)" : "",
       }}
     >
-      <div className=" relative px-4 py-4">
+      <div className="relative px-4 py-4 bg-black/60 rounded-b-2xl">
         {
           //Desktop
           <Container>
@@ -88,7 +92,7 @@ function Navbar({ menus }: INavbarProps) {
                         setIsOpen(true);
                       }}
                     >
-                      <MdMenu className="w-7 h-7" />
+                      <MdMenu className="w-7 h-7" fill="#fff" />
                     </button>
                   </div>
                 </>
@@ -96,7 +100,7 @@ function Navbar({ menus }: INavbarProps) {
             </div>
             {isOpen && (
               <div
-                className="absolute top-0 left-0 bottom-0 right-0 h-screen w-screen flex flex-col p-4"
+                className="absolute top-0 left-0 bottom-0 right-0 h-screen w-screen flex flex-col p-4 bg-black/80"
                 style={{
                   backdropFilter: "blur(1000px)",
                 }}
@@ -108,7 +112,7 @@ function Navbar({ menus }: INavbarProps) {
                         setIsOpen(false);
                       }}
                     >
-                      <MdClose className="w-7 h-7" />
+                      <MdClose className="w-7 h-7" fill="#fff" />
                     </button>
                   </div>
                 }
